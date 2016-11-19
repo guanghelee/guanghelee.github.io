@@ -1,0 +1,127 @@
+<section>
+  <h1>Research Projects</h1>
+
+  <article id="cs-integration">
+    <div class="cell-image">
+       <a href="image/projects/DMF_PGM.jpg" class="image thumb">
+        <img src="image/projects/DMF_PGM.jpg"
+             alt=" " />
+      </a>
+      <a href="image/projects/DMF_diverse.jpg" class="image thumb hidden">
+        <img src="image/projects/DMF_diverse.jpg"
+             alt=" " />
+      </a>
+      <a href="image/projects/DMF_IOT.jpg" class="image thumb hidden">
+        <img src="image/projects/DMF_IOT.jpg"
+             alt=" " />
+      </a>
+      <a href="image/projects/DMF_REC.jpg" class="image thumb hidden">
+        <img src="image/projects/DMF_IOT.jpg"
+             alt=" " />
+      </a>
+    </div>
+    <div class="cell-text">
+      <h3>Robust Factorization Model</h3>
+      <p>Intel Labs (Patent number: PCT/US2015/049110 and PCT/US2015/000390)</p> 
+      <p>Paper: [<a href="pub/DMF.pdf">pdf</a>]</p>
+      <p>We proved that under any continuous and stochastic noise distribution, the sample noises upon data are almost surely diverse. Thus, a weighting strategy is desirable. We proposed to realize optimal instance weighting, as proved in the Gauss-Markov theorem, by formulating the noise as the variance in a Gaussian likelihood. We substantiated our idea in a matrix factorization scenario, and applied a novel low-rank noise structure for diverse characteristics of noise while combatting overfitting. Empirically, our method achieved 7 times faster training time and significantly lower prediction error than the state-of-the-art deep learning model in movie recommendation data.</p>
+    </div>
+    
+    </article>
+    <article id="language-explorer">
+    <div class="cell-image">
+      <a href="image/projects/RFID.jpg" class="image thumb">
+        <img src="image/projects/RFID.jpg"
+             alt=" " />
+      </a>
+    </div>
+    <div class="cell-text">
+      <h3>Passive RFID tracking in retail stores</h3>
+      <p>Intel Labs (Patent number: PCT/US2015/067244)</p> 
+      <p>I was fortunate to be invited to visit Hillsboro (Oregon), Chandler (Arizona) and Santa Clara (California) offices to cooperate with the IoT Group for this project.</p>
+      <p>Passive RFID data are unreliable due to lack of internal power source; thus precise tracking of thousands of clothes is hard. From the discussion with domain experts, we found a hierarchical inference model is suitable for this task and the location of RFID is highly temporally dependent; we proposed a temporally smoothed random forest model with an empirical 90% accuracy using multi-store real data.</p>
+    </div>
+  </article>
+
+  <article id="movisee">
+    <div class="cell-image">
+      <a href="image/projects/CDAE.jpg" class="image thumb">
+        <img src="image/projects/CDAE.jpg"
+             alt=" " />
+      </a>
+    </div>
+    <div class="cell-text">
+      <h3>Cost-sensitive Deep Learning</h3>
+      <p>Intel Labs (Patent number: P88497/14/757,959) (collaborated with intern Yu-An Chung)</p>
+      <p>
+        Cost-sensitive learning is not well-investigated in deep learning. We proposed two algorithms that embed the cost information in the pre-training and the training stage in deep learning, separately. Empirically, by extensive comparisons with Bayes, smoothed one-sided regression, and standard deep learning methods, we achieved superior performance in 7 out of 8 datasets, in which 4 datasets are balanced and 4 datasets are unbalanced.</p>
+     </div>
+  </article>
+
+  <article id="analogyspace">
+    <div class="cell-image">
+      <a href="image/projects/LMF_LR.jpg" class="image thumb">
+        <img src="image/projects/LMF_LR.jpg"
+             alt=" " />
+      </a>
+      <a href="image/projects/LMF_APPROX.jpg" class="image thumb hidden">
+        <img src="image/projects/LMF_APPROX.jpg"
+             alt=" " />
+      </a>
+    </div>
+    <div class="cell-text">
+      <h3>Learning-to-Rank (LTR) Matrix Factorization</h3>
+      <p>Machine Discovery and Social Network Mining Lab</p> 
+      <p>Paper: [<a href="pub/LambdaMF_ICDM.pdf">pdf</a>] [<a href="pub/supplementary-materials-lambdamf.pdf">supplementary material</a>] [<a href="pub/LambdaMF.zip">code</a>]</p>
+      <p> LTR is hard because ranking is a non-smooth function. As current LTR methods for MF only include approximations and bounds, we proposed to optimize ranking in MF directly by lambda gradient, an optimization technique from information retrieval. In addition, we proved that a direct combination between lambda gradient and matrix factorization leads to divergence and O(NlogN) computation for stochastic update, and thus proposed a stable formulation and a faster training algorithm with effectively O(1) computation for a pair of data. The proposed model significantly outperform the approximation and bounding methods in 3 standard recommendation datasets.</p>
+     </div>
+  </article>
+
+  <article id="virtualpets">
+    <div class="cell-image">
+      <a href="image/projects/SR_LR.jpg" class="image thumb hidden">
+        <img src="image/projects/SR_LR.jpg"
+             alt=" " />
+      </a>
+      <a href="image/projects/SR_IM.jpg" class="image thumb">
+        <img src="image/projects/SR_IM.jpg"
+             alt=" " />
+      </a>
+    </div>
+    <div class="cell-text">
+      <h3>Heterogeneous Transfer Learning for Convolutional Neural Network (CNN) in Super Resolution (SR)</h3>
+      <p>Machine Discovery and Social Network Mining Lab</p> 
+      <p>The state-of-the-art SR system with CNN takes 3 days to converge. While typical acceleration method for training CNN like transfer learning is not applicable to SR, where no pre-trained SR CNN model is available, we designed a transfer learning procedure for CNN from object recognition trained in Cifar-10 dataset. Fortunately, the method achieved 11.54 times faster training time while with comparable reconstruction error.</p>
+     </div>
+  </article>
+
+  <article id="cubicfilm">
+    <div class="cell-image">
+      <a href="image/projects/KDD.jpg" class="image thumb">
+        <img src="image/projects/KDD.jpg"
+             alt=" " />
+      </a>
+    </div>
+    <div class="cell-text">
+      <h3>KDD Cup 2014: predicting promising projects for DonorsChoose.org </h3>
+      <p>Advisor: Prof. Chih-Jen Lin and Shou-De Lin</p> 
+      <p>Rank: 12/472</p>
+      The cup is aimed to predict 'exciting' projects, which is defined by KDD Cup as a boolean operation on 7 seperate labels, for DonorsChoose.org.</p>
+      <p>In NTU team, which consists of 21 students, I proposed the most accurate validation set in NTU team by analyzing the temporal relationship in data. In addition, I also created the best single model in NTU team by designing a joint feature weighting and selection procedure for random forest.</p>
+     </div>
+  </article>
+
+  <article id="taiwanuxd">
+    <div class="cell-image">
+      <a href="image/projects/IM.jpg" class="image thumb">
+        <img src="image/projects/IM.jpg" alt=" " />
+      </a>
+    </div>
+    <div class="cell-text">
+      <h3>Multi-round Multi-party Influence Maximization</h3>
+      <p>Machine Discovery and Social Network Mining Lab</p> 
+      <p>We proposed a genetic algorithm for influence maximization in social networks by formulating the influence target into a dense vector representation, rather then conventional binary vector representation, for efficient computation over large social networks. The proposed model achieved superior performance to the state-of-the-art greedy algorithm, which holds currently the best theoretical approximation factor of the optimal solution for the NP-hard influence maximization problem in polynomial time, in a multi-round multi-party scenario.</p>
+    </div>
+  </article>
+
+</section>
