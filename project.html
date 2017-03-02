@@ -1,7 +1,29 @@
 <section>
   <h1>Research Projects</h1>
   <h3>Please click the image to see the details (and more figures).</h3>
-
+  <article id="cs-integration">
+    <div class="cell-image">
+      <a href="image/projects/apple_80.png" class="image thumb">
+        <img src="image/projects/apple_80.png"
+             alt=" " />
+      </a>
+      <a href="image/projects/mercury_60.png" class="image thumb hidden">
+        <img src="image/projects/mercury_60.png"
+             alt=" " />
+      </a>
+      <a href="image/projects/drl-sense.jpg" class="image thumb hidden">
+        <img src="image/projects/drl-sense.jpg"
+             alt=" " />
+      </a>
+    </div>
+    <div class="cell-text">
+      <h3>DRL-Sense: Deep Reinforcement Learning for Multi-Sense Word Representations</h3>
+      <p>Advisor: Yun-Nung (Vivian) Chen</p> 
+      <p>Paper Abstract: <br />
+        This paper proposes DRL-Sense--a multi-sense word representation learning model, to address the word sense ambiguity issue, where a sense selection module and a sense representation module are jointly learned in a reinforcement learning fashion. A novel reward passing procedure is proposed to enable joint training on the selection and representation modules. The modular design implements pure sense-level representation learning with linear time sense selection (decoding). We further develop a non-parametric learning algorithm and a sense exploration mechanism for better flexibility and robustness. The experiments on benchmark data show that the proposed approach achieves the state-of-the-art performance on contextual word similarities and comparable performance with Google's word2vec while using much less training data.
+    </div>
+    
+    </article>
   <article id="cs-integration">
     <div class="cell-image">
        <a href="image/projects/DMF_PGM.jpg" class="image thumb">
@@ -22,10 +44,12 @@
       </a>
     </div>
     <div class="cell-text">
-      <h3>Robust Factorization Model</h3>
+      <h3>Robust Machine Learning for Heteroscedasticity</h3>
       <p>Intel Labs (Patent number: PCT/US2015/049110 and PCT/US2015/000390)</p> 
-      <p>Paper: [<a href="pub/DMF.pdf">pdf</a>]</p>
-      <p>We proved that under any continuous and stochastic noise distribution, the sample noises upon data are almost surely diverse. Thus, a weighting strategy is desirable. We proposed to realize optimal instance weighting, as proved in the Gauss-Markov theorem, by formulating the noise as the variance in a Gaussian likelihood. We substantiated our idea in a matrix factorization scenario, and applied a novel low-rank noise structure for diverse characteristics of noise while combatting overfitting. Empirically, our method achieved 7 times faster training time and significantly lower prediction error than the state-of-the-art deep learning model in movie recommendation data.</p>
+      <p>Paper: [<a href="pub/kdd17-heteroscedastic-learning.pdf">pdf</a>]</p>
+      <p>Paper Abstract: <br />
+        Given the existence of stochastic noises, the implicit deviations of sample data from their true values are almost surely diverse, which introduces heteroscedasticity and makes each data point not equally suitable for fitting a model. In this case, simply averaging the cost among data in the loss function is not ideal. Intuitively we would like to emphasize more on the reliable instances (i.e., those contain smaller noise) while training a model. <br />
+        Motivated by such observation, we derive a general supervised learning framework which models the uncertainty in addition to the typical label prediction. We instantiate our idea with matrix factorization (MF) and gradient boosting machine (GBM). To our best knowledge, we are among the first to study a low-rank noise structure in MF and to propose a GBM with uncertainty modeling. Our model has two advantages. First, it jointly learns the uncertainty and conducts dynamic reweighting of instances, allowing the model to converge to a better solution. Second, during learning the deviated instances are assigned lower weights, which leads to faster convergence since the model does not need to overfit the noise. The experiments show that our model outperforms the typical empirical risk minimization framework in both accuracy and efficiency in a variety of experiment scenarios including recommendation, missing data imputation, regression, and classification.</p>
     </div>
     
     </article>
@@ -73,8 +97,9 @@
     <div class="cell-text">
       <h3>Learning-to-Rank (LTR) Matrix Factorization</h3>
       <p>Machine Discovery and Social Network Mining Lab</p> 
-      <p>Paper: [<a href="pub/LambdaMF_ICDM.pdf">pdf</a>] [<a href="pub/supplementary-materials-lambdamf.pdf">supplementary material</a>] [<a href="pub/LambdaMF.zip">code</a>]</p>
-      <p> LTR is hard because ranking is a non-smooth function. As current LTR methods for MF only include approximations and bounds, we proposed to optimize ranking in MF directly by lambda gradient, an optimization technique from information retrieval. In addition, we proved that a direct combination between lambda gradient and matrix factorization leads to divergence and O(NlogN) computation for stochastic update, and thus proposed a stable formulation and a faster training algorithm with effectively O(1) computation for a pair of data. The proposed model significantly outperform the approximation and bounding methods in 3 standard recommendation datasets.</p>
+      <p>Paper: [<a href="pub/icdm15-lambdaMF.pdf">pdf</a>] [<a href="pub/supplementary-materials-lambdaMF.pdf">supplementary material</a>] [<a href="pub/LambdaMF.zip">code</a>]</p>
+      <p> Paper Abstract: </p>
+      This paper emphasizes optimizing ranking measures in a recommendation problem. Since ranking measures are non-differentiable, previous works have been proposed to deal with this problem via approximations or lower/upper bounding of the loss. However, such mismatch between ranking measures and approximations/bounds can lead to non-optimal ranking results. To solve this problem, we propose to model the gradient of non-differentiable ranking measure based on the idea of virtual gradient, which is called lambda in learning to rank. In addition, noticing the difference between learning to rank and recommendation models, we prove that under certain circumstance the existence of popular items can lead to unlimited norm growing of the latent factors in a matrix factorization model. We further create a novel regularization term to remedy such concern. Finally, we demonstrate that our model, LambdaMF, outperforms several state-of-the-art methods. We further show in experiments that in all cases our model achieves global optimum of normalized discount cumulative gain during training.</p>
      </div>
   </article>
 
